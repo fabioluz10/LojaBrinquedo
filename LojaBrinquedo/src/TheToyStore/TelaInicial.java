@@ -30,10 +30,10 @@ public class TelaInicial extends javax.swing.JFrame {
         try {
             con= DriverManager.getConnection("jdbc:mysql://localhost:3306/LojaBrinquedo", "root", "");
             st =(Statement) con.createStatement();
-            JOptionPane.showMessageDialog(null, "Conectado");
+            JOptionPane.showMessageDialog(null, "Banco de dados Conectado");
         }
        catch (HeadlessException | SQLException e){
-            JOptionPane.showMessageDialog(null, "Não conectado");
+            JOptionPane.showMessageDialog(null, "O banco de dados NÃO foi conectado");
        }
     }
 
