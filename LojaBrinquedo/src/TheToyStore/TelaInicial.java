@@ -19,22 +19,15 @@ import javax.swing.JOptionPane;
  * @author fabio
  */
 public class TelaInicial extends javax.swing.JFrame {
-    public Connection con;
-    public Statement st;
-    public ResultSet resultado = null;
+    public static Connection con;
+    public static Statement st;
+    public static ResultSet resultado = null;
     /**
      * Creates new form TelaInicial
      */
     public TelaInicial() {
        initComponents();
-        try {
-            con= DriverManager.getConnection("jdbc:mysql://localhost:3306/LojaBrinquedo", "root", "");
-            st =(Statement) con.createStatement();
-            JOptionPane.showMessageDialog(null, "Banco de dados Conectado");
-        }
-       catch (HeadlessException | SQLException e){
-            JOptionPane.showMessageDialog(null, "O banco de dados NÃO foi conectado");
-       }
+      
     }
 
     /**
