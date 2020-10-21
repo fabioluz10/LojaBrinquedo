@@ -70,7 +70,6 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
-        statusBd = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -333,12 +332,6 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("PMingLiU-ExtB", 0, 48)); // NOI18N
         jLabel1.setText("Cadastro de Clientes");
 
-        statusBd.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                statusBdActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -352,9 +345,7 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(statusBd)
-                .addGap(23, 23, 23))
+                .addGap(62, 62, 62))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jPanel1, jScrollPane1});
@@ -363,11 +354,7 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(13, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(statusBd)))
+                .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -420,10 +407,6 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
     private void btExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExcluirActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btExcluirActionPerformed
-
-    private void statusBdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusBdActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_statusBdActionPerformed
 
     /**
      * @param args the command line arguments
@@ -478,7 +461,6 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
     private javax.swing.JLabel lbNomeCliente;
     private javax.swing.JLabel lbTelefone;
     private javax.swing.JLabel lbUf;
-    private javax.swing.JRadioButton statusBd;
     private javax.swing.JFormattedTextField txtCep;
     private javax.swing.JTextField txtCidade;
     private javax.swing.JFormattedTextField txtCpf;
